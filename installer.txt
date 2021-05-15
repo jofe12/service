@@ -9,10 +9,11 @@ sudo ./install_docker.sh
 sudo rm install_docker.sh
 sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
+sudo apt install git
 sudo git clone https://github.com/ioticos/ioticos_god_level_services.git
 sudo mv ioticos_god_level_services ioticos
 cd ioticos
-
+ls
 // WARNING .ENV
 
 
@@ -35,13 +36,13 @@ environment=dev
 TZ=UTC
 
 # MONGO CREDENTIALS
-MONGO_USERNAME=devuser
-MONGO_PASSWORD=devpassword
+MONGO_USERNAME=jfda
+MONGO_PASSWORD=jfda
 MONGO_EXT_PORT=27017
 
 # EMQX
-EMQX_DEFAULT_USER_PASSWORD=emqxdashpass
-EMQX_DEFAULT_APPLICATION_SECRET=emqxsecret
+EMQX_DEFAULT_USER_PASSWORD=jfda
+EMQX_DEFAULT_APPLICATION_SECRET=jfda
 
 
 
@@ -53,26 +54,26 @@ EMQX_DEFAULT_APPLICATION_SECRET=emqxsecret
 #A P I
 API_PORT=3001
 
-MONGO_USERNAME=devuser
-MONGO_PASSWORD=devpassword
+MONGO_USERNAME=jfda
+MONGO_PASSWORD=jfda
 MONGO_HOST=mongo
 MONGO_PORT=27017
-MONGO_DATABASE=ioticos_god_level
+MONGO_DATABASE=IOT2021
 
 #emqx
-EMQX_DEFAULT_APPLICATION_SECRET=emqxsecret
-EMQX_NODE_SUPERUSER_USER=superuser
-EMQX_NODE_SUPERUSER_PASSWORD=superuser
-EMQX_NODE_HOST=54.94.41.193
+EMQX_DEFAULT_APPLICATION_SECRET=jfda
+EMQX_NODE_SUPERUSER_USER=jfda
+EMQX_NODE_SUPERUSER_PASSWORD=jfda
+EMQX_NODE_HOST=193.46.199.60
 EMQX_API_TOKEN=121212
 
 
 # F R O N T
 APP_PORT=3000
-AXIOS_BASE_URL=http://54.94.41.193:3001/api
+AXIOS_BASE_URL=http://193.46.199.60:3001/api
 
 MQTT_PREFIX=ws://
-MQTT_HOST=54.94.41.193
+MQTT_HOST=193.46.199.60
 MQTT_PORT=8083
 
 

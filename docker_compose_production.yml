@@ -6,9 +6,7 @@ volumes:
   vol-emqx-log:
     name: foo-emqx-log
 
-
 services:
-
   node:
     container_name: node
     image: "node:14"
@@ -19,8 +17,8 @@ services:
     ports:
       - "3000:3000"
       - "3001:3001"
-      - "80:3002"
-
+      #- "80:3002"
+      - "3002:80"
     links:
       - emqx
       - mongo
@@ -58,7 +56,6 @@ services:
       - vol-emqx-data:/opt/emqx/data
       - vol-emqx-log:/opt/emqx/log
 
-  
     links:
       - mongo
 
@@ -113,4 +110,3 @@ services:
       EMQX_LOADED_PLUGINS: "emqx_recon,emqx_retainer,emqx_management,emqx_dashboard,emqx_auth_mongo"
 
       EMQX_LISTENER__TCP__EXTERNAL__MAX_CONNECTIONS: 1000
-
