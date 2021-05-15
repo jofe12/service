@@ -21,3 +21,4 @@ Instalar la plataforma en Linux es muy simple. Ya que para tal fin desarrollamos
 https://github.com/ioticos/ioticos_god_level_services/blob/master/install_ioticosgl.sh
 
 ![IOTICOS%20GL%20APP%203aecd292ad5447b9aff5744b6608d234/ScreenFlow.gif](IOTICOS%20GL%20APP%203aecd292ad5447b9aff5744b6608d234/ScreenFlow.gif)
+# servives
