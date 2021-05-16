@@ -297,8 +297,8 @@ sudo sh -c " echo 'EMQX_DEFAULT_USER_PASSWORD=${EMQX_DEFAULT_USER_PASSWORD}' >> 
 sudo sh -c " echo 'EMQX_DEFAULT_APPLICATION_SECRET=${EMQX_DEFAULT_APPLICATION_SECRET}' >> $filename"
 
 
-sudo git clone https://github.com/jofe12/app_web.git
-sudo mv app_web  app
+sudo git clone https://github.com/jofe12/app.git
+#sudo mv app_web  app
 
 cd app
 
